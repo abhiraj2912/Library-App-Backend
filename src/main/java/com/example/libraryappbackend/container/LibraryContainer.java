@@ -6,9 +6,16 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class LibraryContainer {
 
-    @PostMapping
-    public String UserRegister(){
+    @PostMapping("")
+    public String UserRegister()
+    {
         return "User Registration";
+    }
+
+    @PostMapping("/entry")
+    public String AddEntry()
+    {
+        return "Add Entry";
     }
 
 
