@@ -12,11 +12,28 @@ public class LibraryContainer {
         return "User Registration";
     }
 
-    @PostMapping("/entry")
-    public String AddEntry()
+    @PostMapping("/add")
+    public String AddBook()
     {
-        return "Add Entry";
+        return "Add Books";
     }
 
+    @PostMapping("/search")
+    public String SearchBook()
+    {
+        return "Search Book";
+    }
+
+    @PostMapping("/delete")
+    public String DeleteBook()
+    {
+        return "Delete Book";
+    }
+
+    @PostMapping("/edit")
+    public String EditBook()
+    {
+        return "Edit Book";
+    }
 
 }
