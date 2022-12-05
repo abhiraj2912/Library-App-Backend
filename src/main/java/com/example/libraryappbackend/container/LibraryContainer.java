@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class LibraryContainer {
 
-    @PostMapping("")
+    @PostMapping("/")
     public String UserRegister()
     {
         return "User Registration";
@@ -41,6 +41,12 @@ public class LibraryContainer {
     public String ViewBooks()
     {
         return "View Books";
+    }
+
+    @PostMapping("/issue")
+    public String IssueBooks()
+    {
+        return "Issue Books";
     }
 
 }
