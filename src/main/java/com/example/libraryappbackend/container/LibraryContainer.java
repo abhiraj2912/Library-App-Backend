@@ -7,7 +7,14 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class LibraryContainer {
 
-    @PostMapping("/")
+
+    @GetMapping("/")
+    public String Library()
+    {
+        return "Library App";
+    }
+
+    @PostMapping("/register")
     public String UserRegister()
     {
         return "User Registration";
